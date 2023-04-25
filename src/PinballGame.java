@@ -68,7 +68,7 @@ public class PinballGame extends JPanel {
                 this.revalidate();
                 this.menu.remove(this);
                 this.repaint();
-                MenuCanvas canvas = new MenuCanvas(this.menu);
+                MenuCanvas canvas = new MenuCanvas();
                 canvas.setBounds(0, height / 2, width, height);
                 canvas.CreateButtons();
                 this.menu.getContentPane().add(canvas);

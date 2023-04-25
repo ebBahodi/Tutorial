@@ -5,15 +5,14 @@ public class Menu extends JFrame {
     private PinballGame game;
     private final int width;
     private final int height;
-    public Menu(int width, int height) {
+    public Menu(int width, int height, MyGame game) {
         super();
         this.width = width;
         this.height = height;
-        MenuCanvas menuCanvas = new MenuCanvas(this);
         setSize(new Dimension(width, height));
-        menuCanvas.setBounds(0, height / 2, width, height);
-        menuCanvas.CreateButtons();
-        this.getContentPane().add(menuCanvas);
+        this.getContentPane().removeAll();
+        this.getContentPane().add(game);
+        this.setBackground(Color.red);
         this.setVisible(true);
     }
 
