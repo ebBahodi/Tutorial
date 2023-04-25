@@ -27,6 +27,7 @@ public class Menu extends JFrame {
         this.getContentPane().add(this.game);
         this.game.displayFrame();
         this.game.setRun(true);
+        
     }
 
     public PinballGame getGame() {
