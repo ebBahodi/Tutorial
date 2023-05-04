@@ -1,3 +1,6 @@
+import Pinball.MyGame;
+import Pinball.PinballGame;
+
 import javax.swing.*;
 import java.awt.*;
 
@@ -18,19 +21,20 @@ public class Menu extends JFrame {
 
     @Override
     public void paintComponents(Graphics g) {
+
         super.paintComponents(g);
     }
 
-    public void startGame() {
-        this.game = new PinballGame(width, height, this);
-        this.getContentPane().removeAll();
-        this.getContentPane().add(this.game);
-        this.game.displayFrame();
-        this.game.setRun(true);
-        
-    }
-
-    public PinballGame getGame() {
-        return game;
-    }
+//    public void startGame() {
+//        this.game = new PinballGame(width, height, this);
+//        this.getContentPane().removeAll();
+//        this.getContentPane().add(this.game);
+//        this.game.displayFrame();
+//        this.game.setRun(true);
+//
+//    }
+//
+//    public PinballGame getGame() {
+//        return game;
+//    }
 }
